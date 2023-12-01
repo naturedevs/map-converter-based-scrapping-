@@ -1,0 +1,1 @@
+pyinstaller --onefile --i icon.ico --windowed --hidden-import=utils --add-data="q3map2;." --add-data="2.ico;." main6.py 
