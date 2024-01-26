@@ -15,6 +15,7 @@ from PyQt6.QtGui import (
 )
 from utils.FS1 import FS
    
+
 def bspToMap(bspPath, mapPath):
     exe_path = pkg_resources.resource_filename(__name__, 'myconverter.exe')
     subprocess.run([exe_path,"-convert", "-format", "map", "-map", bspPath, "-game", "wolf"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -63,7 +64,7 @@ class Window(QDialog):
         super().__init__(parent=None)
         ico_path = pkg_resources.resource_filename(__name__, '2.ico')
         self.setWindowIcon(QIcon(ico_path))
-        self.setWindowTitle("PK3 to map Converter")
+        self.setWindowTitle("PK3 to map  Converter")
         dialogLayout = QVBoxLayout()
         # formLayout
         formLayout = QFormLayout()
